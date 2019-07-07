@@ -1,0 +1,71 @@
+#include <iostream>
+#include <conio.h>
+#include <iomanip>
+
+using namespace std; 
+
+int main()
+
+{
+
+char Package;
+float hours;
+float price;
+ 
+cout << "Welcome to Teletigers Esports Club Internet packages" << endl;
+cout << " What Package Service did you avail? " << endl; 
+cout << " Please Enter:  A / B / C " << endl;
+cin >> Package; 
+cout << "How many hours usage: " << endl; 
+cin >> hours;
+
+cout << fixed << showpoint << setprecision(2);
+
+
+	if (Package == 'A' && hours > 10)
+
+	{
+		price = 995.00 + (hours - 10 ) * 20 ;
+		cout << "This package is P995.00/mo for 10 hours and additional P 20.00 per exceeding hour" << endl;
+		cout << "Your Bill is: " << price << endl;	
+	}
+
+	else if (Package == 'A')
+	{
+		price = 995.00;
+		cout << "This package is P995.00/mo for 10 hours and additional P 20.00 per exceeding hour" << endl;
+		cout << "Your Bill is: P " << price << endl;
+	}
+
+	else if (Package == 'B' && hours > 20)
+	{
+		price = 1495.00 + (hours - 20 ) * 10;
+		cout << "This package is P1495.00/mo for 20 hours and additional P 10.00 per exceeding hour" << endl;
+		cout << "Your Bill is: " << price << endl;
+	}
+ 	
+	else if (Package == 'B')
+	{
+		price = 1495.00;
+		cout << "This package is P1495.00/mo for 20 hours and additional P 10.00 per exceeding hour" << endl;
+		cout << "Your Bill is: P " << price << endl;
+	}
+
+	else if (Package == 'C')
+	{
+		price = 1995.00;
+		cout << "This package offers unlimited hour usage." << endl;
+		cout << "Your Bill is: P "	<< price << endl;
+	}
+	
+	else
+	{
+		cout << "You have entered an invalid Package!!" << endl;
+	}
+	
+	
+_getch();
+
+return 0;
+
+}
