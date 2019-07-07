@@ -22,7 +22,7 @@ cin >> hours;
 cout << fixed << showpoint << setprecision(2);
 
 
-	if (Package == 'A' && hours > 10)
+	if (Package == 'A' && hours > 10 || Package == 'a' && hours > 10)
 
 	{
 		price = 995.00 + (hours - 10 ) * 20 ;
@@ -30,28 +30,28 @@ cout << fixed << showpoint << setprecision(2);
 		cout << "Your Bill is: " << price << endl;	
 	}
 
-	else if (Package == 'A')
+	else if (Package == 'A' || Package == 'a')
 	{
 		price = 995.00;
 		cout << "This package is P995.00/mo for 10 hours and additional P 20.00 per exceeding hour" << endl;
 		cout << "Your Bill is: P " << price << endl;
 	}
 
-	else if (Package == 'B' && hours > 20)
+	else if (Package == 'B' && hours > 20 || Package == 'b' && hours > 20)
 	{
 		price = 1495.00 + (hours - 20 ) * 10;
 		cout << "This package is P1495.00/mo for 20 hours and additional P 10.00 per exceeding hour" << endl;
 		cout << "Your Bill is: " << price << endl;
 	}
  	
-	else if (Package == 'B')
+	else if (Package == 'B'|| Package == 'b')
 	{
 		price = 1495.00;
 		cout << "This package is P1495.00/mo for 20 hours and additional P 10.00 per exceeding hour" << endl;
 		cout << "Your Bill is: P " << price << endl;
 	}
 
-	else if (Package == 'C')
+	else if (Package == 'C' || Package == 'c')
 	{
 		price = 1995.00;
 		cout << "This package offers unlimited hour usage." << endl;
