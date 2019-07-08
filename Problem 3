@@ -1,6 +1,6 @@
 #include <iostream>
 #include <conio.h>
-#include <cmath>
+#include <iomanip>
 
 using namespace std;
 
@@ -9,8 +9,8 @@ int main()
 	int x,y;
 	double z, V; 
 	z = 2.5;
-	cout.precision(2);
 	
+	cout << fixed << showpoint << setprecision(2);	
 	
 	cout << "Enter the value of x: " << endl; 
     cin >> x;
